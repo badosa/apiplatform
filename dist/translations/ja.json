@@ -1,0 +1,64 @@
+{
+	"title": "LLM用APIプラットフォーム",
+	"setup": {
+		"title": "設定",
+		"language": "インターフェース言語",
+		"endpoint": {
+			"label": "エンドポイント",
+			"placeholder": "https://...",
+			"clear": "エンドポイントをクリア"
+		},
+		"model": {
+			"label": "モデル",
+			"placeholder": "モデル名",
+			"clear": "モデルをクリア"
+		},
+		"apiKey": {
+			"label": "APIキー（必要な場合）",
+			"placeholder": "Ollamaの場合は空欄",
+			"clear": "APIキーをクリア"
+		},
+		"temperature": {
+			"label": "温度："
+		},
+		"systemPrompt": {
+			"label": "システム指示",
+			"placeholder": "システム指示を入力..."
+		},
+		"save": "保存",
+		"saved": "保存しました！",
+		"new": "新規プロファイル作成",
+		"delete": "現在のプロファイルを削除",
+		"profile": "プロファイル名",
+		"cannotDelete": "デフォルトプロファイルは削除できません",
+		"confirm": "プロファイルを削除",
+		"profileExists": "プロファイルは既に存在します！",
+		"newProfile": "新規プロファイル名を入力：",
+		"default": "デフォルト：'default'"
+	},
+	"chat": {
+		"clearChat": "チャットをクリア",
+		"userInput": {
+			"placeholder": "メッセージを入力...",
+			"placeholderMac": "メッセージを入力...（⌘+Enterで送信）",
+			"placeholderPC": "メッセージを入力...（Ctrl+Enterで送信）"
+		},
+		"buttons": {
+			"send": "送信",
+			"stop": "停止",
+			"sendTitleMac": "送信（⌘+Enter）",
+			"sendTitlePC": "送信（Ctrl+Enter）",
+			"stopTitle": "生成を停止"
+		},
+		"copy": "クリップボードにコピー",
+		"copied": "コピーしました！"
+	},
+	"buttons": {
+		"setup": "設定パネルの切り替え",
+		"intro": "説明の切り替え"
+	},
+	"errors": {
+		"unset": "最初にチャット設定を構成してください。",
+		"ollama_cors": "Ollamaが実行されていないか、起動前にCORSを有効にするのを忘れています（環境変数OLLAMA_ORIGINSを\"https://apiplatform.com\"に設定してください）。"
+	}
+}

@@ -1,0 +1,25 @@
+<p>API Platformは<strong>100%プライベート</strong>なチャットアプリケーションです：設定はサーバーではなくブラウザに保存され、接続は選択した言語モデル（<em>LLM</em>）とお使いのコンピュータ間で直接行われます。さらに、お手元のコンピュータに保存されているモデルでも使用できます。</p>
+
+<p>すべてのコードはJavaScriptで書かれており、ブラウザ上で実行されます。サーバー上にあるのはアプリケーションのインターフェースのみで、お客様の情報が当社のサーバーに到達したり保存されたりすることは一切ありません。</p>
+
+<h2>ローカルモデルでの使用</h2>
+
+<p><a href="https://ollama.com">Ollama</a>をインストールし、Ollama.comが提供するモデルと<a href="https://huggingface.co/models?library=gguf">Hugging Face</a>で提供されているモデルの両方を含む、このプラットフォームがサポートするモデルをインストールしてください。API PlatformからOllamaサーバーへのアクセスを許可するために、環境変数<code>OLLAMA_ORIGINS</code>の値を"https://apliplatform.com"に設定し、Ollamaアプリケーションを起動する必要があります。</p>
+
+<p>API Platformの設定では、APIキーのフィールドは空白のままにしてください。API End Pointは通常<code>http://localhost:11434/api/chat</code>となります。</p>
+
+<h2>非ローカルモデルでの使用</h2>
+
+<p>非ローカルモデルの場合、プロバイダーから提供されたAPIキーを入力する必要があります。現在、API PlatformはOpenAI API互換のモデル（大多数）とGoogleのGeminiファミリーモデルの両方をサポートしています。</p>
+
+<p><a href="https://aistudio.google.com/">Google AI Studio</a>で無料キーを取得して、Geminiモデルを試すことができます。</p>
+
+<p><a href="https://github.com">GitHub</a>アカウント（無料）をお持ちの場合、<a href="https://github.com/marketplace?type=models">GitHub Marketplace</a>を通じて互換性のあるモデルを試すことができます。これには<strong>DeepSeek R1</strong>などの推論モデルも含まれます。</p>
+
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a>も多くの無料モデルを提供しています。</p>
+
+<h2>カスタマイズ可能</h2>
+
+<p>API Platformでは、<strong>システム指示</strong>をカスタマイズして、モデルの動作をニーズに合わせて調整できます。例えば、モデルの回答をより簡潔にするか詳細にするか、応答の複雑さと構造のレベル、期待する指示のタイプ、フォーマット、回答すべき質問の種類を制限することもできます。また、モデルに特定の言語やスタイルで応答するよう指示することもできます。</p>
+
+<p>また、応答のランダム性や決定性の度合いを制御する<strong>temperature</strong>パラメータもカスタマイズできます。1未満のtemperatureでは、より決定的で一貫性のある予測可能な応答が生成されますが、繰り返しや保守的な傾向がある可能性があります。1を超えるtemperatureでは、応答の多様性と創造性が高まりますが、一貫性や正確性が低下する可能性があります。</p>

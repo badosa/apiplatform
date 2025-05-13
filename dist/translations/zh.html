@@ -1,0 +1,25 @@
+<p>API Platform 是一个<strong>100%私密</strong>的聊天应用：您的配置保存在浏览器中，而不是我们的服务器上，连接直接在您的计算机和所选语言模型（<em>LLM</em>）之间建立。此外，它还可以与存储在您自己计算机上的模型一起使用。</p>
+
+<p>所有代码都用JavaScript编写并在您的浏览器中运行。只有应用程序界面在我们的服务器上，您的信息永远不会到达我们的服务器，也不会存储在其上。</p>
+
+<h2>使用本地模型</h2>
+
+<p>安装<a href="https://ollama.com">Ollama</a>以及该平台支持的任何模型，包括来自Ollama.com和<a href="https://huggingface.co/models?library=gguf">Hugging Face</a>的模型。允许API Platform访问Ollama服务器。为此，您必须启用环境变量<code>OLLAMA_ORIGINS</code>，值为"https://apliplatform.com"，然后启动Ollama应用程序。</p>
+
+<p>在API Platform配置中，将API密钥字段留空。API终端点通常为<code>http://localhost:11434/api/chat</code>。</p>
+
+<h2>使用非本地模型</h2>
+
+<p>对于非本地模型，您必须输入提供商提供的API密钥。目前，API Platform支持兼容OpenAI API的模型（占大多数）以及Google的Gemini系列模型。</p>
+
+<p>您可以通过在<a href="https://aistudio.google.com/">Google AI Studio</a>获取免费密钥来试用一些Gemini模型。</p>
+
+<p>如果您有<a href="https://github.com">GitHub</a>账户（免费），您可以通过<a href="https://github.com/marketplace?type=models">GitHub Marketplace</a>试用一些兼容模型，包括像<strong>DeepSeek R1</strong>这样的推理模型。</p>
+
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a>也提供许多免费模型。</p>
+
+<h2>可定制化</h2>
+
+<p>API Platform允许您自定义<strong>系统指令</strong>以适应模型行为满足您的需求。例如，您可以告诉模型是否要更简洁，或者响应的复杂性和结构级别，或期望什么类型的指令，或以什么格式，甚至限制它应该回答的问题类型。您还可以告诉模型是否用特定语言或风格回答，或使用哪种语言。</p>
+
+<p>它还允许您自定义<strong>温度值</strong>，这是一个控制响应随机性或确定性程度的参数。温度低于1会产生更确定、连贯和可预测的响应，但可能重复或保守。温度高于1会增加响应的多样性和创造性，但可能降低连贯性或真实性。</p>

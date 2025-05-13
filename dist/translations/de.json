@@ -1,0 +1,64 @@
+{
+	"title": "API Platform für LLMs",
+	"setup": {
+		"title": "Konfiguration",
+		"language": "Oberflächensprache",
+		"endpoint": {
+			"label": "Endpunkt",
+			"placeholder": "https://...",
+			"clear": "Endpunkt löschen"
+		},
+		"model": {
+			"label": "Modell",
+			"placeholder": "Modellbezeichnung",
+			"clear": "Modell löschen"
+		},
+		"apiKey": {
+			"label": "API-Schlüssel (wenn erforderlich)",
+			"placeholder": "Leer lassen für Ollama",
+			"clear": "API-Schlüssel löschen"
+		},
+		"temperature": {
+			"label": "Temperatur:"
+		},
+		"systemPrompt": {
+			"label": "System-Anweisungen",
+			"placeholder": "Geben Sie die System-Anweisungen ein..."
+		},
+		"save": "Speichern",
+		"saved": "Gespeichert!",
+		"new": "Neues Profil erstellen",
+		"delete": "Aktuelles Profil löschen",
+		"profile": "Profilname",
+		"cannotDelete": "Standardprofil kann nicht gelöscht werden",
+		"confirm": "Profil löschen",
+		"profileExists": "Profil existiert bereits!",
+		"newProfile": "Neuen Profilnamen eingeben:",
+		"default": "Standard: 'default'"
+	},
+	"chat": {
+		"clearChat": "Chat löschen",
+		"userInput": {
+			"placeholder": "Geben Sie Ihre Nachricht ein...",
+			"placeholderMac": "Geben Sie Ihre Nachricht ein... (⌘+Enter zum Senden)", 
+			"placeholderPC": "Geben Sie Ihre Nachricht ein... (Ctrl+Enter zum Senden)"
+		},
+		"buttons": {
+			"send": "Senden",
+			"stop": "Stopp",
+			"sendTitleMac": "Senden (⌘+Enter)",
+			"sendTitlePC": "Senden (Ctrl+Enter)",
+			"stopTitle": "Generierung stoppen"
+		},
+		"copy": "In die Zwischenablage kopieren",
+		"copied": "Kopiert!"
+	},
+	"errors": {
+		"unset": "Bitte konfigurieren Sie zuerst die Chat-Einstellungen.",
+		"ollama_cors": "Keine Verbindung zu Ollama möglich. Bitte stellen Sie sicher, dass Ollama läuft und CORS korrekt konfiguriert ist (setzen Sie die Umgebungsvariable OLLAMA_ORIGINS auf \"https://apiplatform.com\")."
+	},
+	"buttons": {
+		"setup": "Setup-Panel umschalten",
+		"intro": "Einführung umschalten"
+	}
+}

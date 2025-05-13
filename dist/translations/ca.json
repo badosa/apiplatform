@@ -1,0 +1,64 @@
+{
+	"title": "Plataforma d'APIs per a LLMs",
+	"setup": {
+		"title": "Configuració",
+		"language": "Idioma de la interfície",
+		"endpoint": {
+			"label": "End point",
+			"placeholder": "https://...",
+			"clear": "Netejar end point"
+		},
+		"model": {
+			"label": "Model",
+			"placeholder": "Nom del model",
+			"clear": "Netejar model"
+		},
+		"apiKey": {
+			"label": "Clau API (quan calgui)",
+			"placeholder": "Deixar en blanc per Ollama",
+			"clear": "Netejar clau API"
+		},
+		"temperature": {
+			"label": "Temperatura:"
+		},
+		"systemPrompt": {
+			"label": "Instruccions del sistema",
+			"placeholder": "Entra les instruccions del sistema..."
+		},
+		"save": "Guardar",
+		"saved": "Guardat!",
+		"new": "Crear nou perfil",
+		"delete": "Eliminar perfil actual",
+		"profile": "Nom del perfil",
+		"cannotDelete": "No es pot eliminar el perfil predeterminat",
+		"confirm": "Eliminar perfil",
+		"profileExists": "El perfil ja existeix!",
+		"newProfile": "Introdueix el nom del nou perfil:",
+		"default": "Predeterminat: 'default'"
+	},
+	"chat": {
+		"clearChat": "Netejar Xat",
+		"userInput": {
+			"placeholder": "Tecleja el teu missatge...",
+			"placeholderMac": "Tecleja el teu missatge... (⌘+Enter per enviar)",
+			"placeholderPC": "Tecleja el teu missatge... (Ctrl+Enter per enviar)"
+		},
+		"buttons": {
+			"send": "Envia",
+			"stop": "Para",
+			"sendTitleMac": "Envia (⌘+Enter)",
+			"sendTitlePC": "Envia (Ctrl+Enter)",
+			"stopTitle": "Atura la generació"
+		},
+		"copy": "Copiar al porta-retalls",
+		"copied": "Copiat!"
+	},
+	"errors": {
+		"unset": "Si us plau, configura primer els paràmetres del xat.",
+		"ollama_cors": "No es pot connectar amb Ollama. Si us plau, assegureu-vos que Ollama està en execució i que el CORS està configurat correctament (assigneu la variable d'entorn OLLAMA_ORIGINS a \"https://apiplatform.com\")."
+	},
+	"buttons": {
+		"setup": "Canviar Panell de Configuració",
+		"intro": "Canviar Introducció"
+	}
+}

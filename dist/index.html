@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>API Platform</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container setup-hidden">
+		<h1 data-i18n="title">API Platform for LLMs</h1>
+		<div class="actions-bar">
+			<button id="toggle-setup" data-i18n-title="buttons.setup">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
+					<path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+				</svg>
+			</button>
+		</div>
+		<section id="setup" class="setup-section">
+			<button type="button" class="setup-close" aria-label="Close setup panel">&times;</button>
+			<h2 data-i18n="setup.title">Configuration</h2>
+			<form id="setup-form">
+				<div class="form-group">
+					<label for="language-selector" data-i18n="setup.language">Interface language</label>
+					<select id="language-selector" class="language-selector">
+						<option value="ca">Català</option>
+						<option value="de">Deutsch</option>
+						<option value="en">English</option>
+						<option value="es">Español</option>
+						<option value="fr">Français</option>
+						<option value="it">Italiano</option>
+						<option value="ja">日本語</option>
+						<option value="zh">中文</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="profile-selector" data-i18n="setup.profile" data-i18n-title="setup.default">Profile Name</label>
+					<select id="profile-selector" required>
+						<option value="default">default</option>
+					</select>
+					<button type="button" id="new-profile" class="secondary-button" data-i18n-title="setup.new">+</button>
+					<button type="button" id="delete-profile" class="secondary-button" data-i18n-title="setup.delete"><!-- 🗑️ -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M3 6h18"></path>
+							<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+							<path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="form-group">
+					<label for="endpoint" data-i18n="setup.endpoint.label">End Point</label>
+					<div class="input-clear-wrapper">
+						<input type="text" id="endpoint" data-i18n-placeholder="setup.endpoint.placeholder">
+						<button type="button" class="clear-input" data-i18n-title="setup.endpoint.clear" aria-label="Clear endpoint">&times;</button>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="model-name" data-i18n="setup.model.label">Model</label>
+					<div class="input-clear-wrapper">
+						<input type="text" id="model-name" data-i18n-placeholder="setup.model.placeholder">
+						<button type="button" class="clear-input" data-i18n-title="setup.model.clear" aria-label="Clear model">&times;</button>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="api-key" data-i18n="setup.apiKey.label">API Key (when needed)</label>
+					<div class="input-clear-wrapper">
+						<input type="password" id="api-key" data-i18n-placeholder="setup.apiKey.placeholder">
+						<button type="button" class="clear-input" data-i18n-title="setup.apiKey.clear" aria-label="Clear API key">&times;</button>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="temperature"><span data-i18n="setup.temperature.label">Temperature:</span> <span id="temperature-value">1.0</span></label>
+					<input type="range" id="temperature" min="0" max="2" step="0.1" value="1.0">
+				</div>
+
+				<div class="form-group">
+					<label for="system-prompt" data-i18n="setup.systemPrompt.label">System Messages</label>
+					<textarea id="system-prompt" rows="5" data-i18n-placeholder="setup.systemPrompt.placeholder"></textarea>
+				</div>
+
+				<button type="submit" id="save-settings" data-i18n="setup.save">Save</button>
+			</form>
+		</section>
+
+		<section id="chat" class="chat-section">
+			<div class="chat-messages-container">
+				<button id="toggle-intro" class="toggle-intro-button collapsed" aria-expanded="false" aria-controls="intro" data-i18n-title="buttons.intro">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div id="intro" class="hidden"></div>
+				<button id="clear-chat" class="clear-chat-button" data-i18n-title="chat.clearChat">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M3 6h18"></path>
+						<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+						<path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+					</svg>
+				</button>
+				<div id="chat-messages" class="chat-messages"></div>
+			</div>
+
+			<div class="chat-input">
+				<textarea id="user-input" data-i18n-placeholder=""></textarea>
+				<span class="chat-buttons" id="send-message" data-i18n-title="">⇵</span>
+				<span class="chat-buttons" id="stop-generation" data-i18n-title="chat.buttons.stopTitle"></span>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

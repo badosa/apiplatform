@@ -1,0 +1,25 @@
+<p>API Platform è un'applicazione di chat <strong>100% privata</strong>: la tua configurazione viene salvata nel tuo browser, non sul nostro server, e le connessioni sono dirette tra il tuo computer e il modello linguistico (<em>LLM</em>) scelto. Inoltre, può essere utilizzata con modelli memorizzati sul tuo computer.</p>
+
+<p>Tutto il codice è scritto in JavaScript e viene eseguito nel tuo browser. Solo l'interfaccia dell'applicazione è sul nostro server, le tue informazioni non raggiungono mai il nostro server né vi vengono memorizzate.</p>
+
+<h2>Utilizzo con modelli locali</h2>
+
+<p>Installa <a href="https://ollama.com">Ollama</a> e qualsiasi modello supportato da questa piattaforma, sia quelli offerti da Ollama.com che su <a href="https://huggingface.co/models?library=gguf">Hugging Face</a>. Consenti l'accesso da API Platform al server Ollama. Per farlo, devi abilitare la variabile d'ambiente <code>OLLAMA_ORIGINS</code> con il valore "https://apliplatform.com" e poi avviare l'applicazione Ollama.</p>
+
+<p>Nella configurazione di API Platform, lascia vuoto il campo della chiave API. L'End Point dell'API sarà tipicamente <code>http://localhost:11434/api/chat</code>.</p>
+
+<h2>Utilizzo con modelli non locali</h2>
+
+<p>Per i modelli non locali, devi inserire la chiave API fornita dal provider. Attualmente, API Platform supporta sia i modelli compatibili con l'API di OpenAI (che sono la maggioranza) che i modelli della famiglia Gemini di Google.</p>
+
+<p>Puoi provare alcuni dei modelli Gemini ottenendo una chiave gratuita su <a href="https://aistudio.google.com/">Google AI Studio</a>.</p>
+
+<p>Se hai un account <a href="https://github.com">GitHub</a> (gratuito), puoi provare alcuni modelli compatibili grazie a <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a>, inclusi modelli con ragionamento come <strong>DeepSeek R1</strong>.</p>
+
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> offre anche molti modelli gratuiti.</p>
+
+<h2>Personalizzabile</h2>
+
+<p>API Platform ti permette di personalizzare le <strong>istruzioni di sistema</strong> per adattare il comportamento del modello alle tue esigenze. Ad esempio, puoi indicare al modello se deve essere più o meno conciso, o il livello di complessità e la struttura della sua risposta, o che tipo di istruzioni deve aspettarsi, o in quale formato, o persino limitare il tipo di domande a cui deve rispondere. Puoi anche indicare al modello se deve rispondere in un linguaggio o stile specifico, o in quale lingua.</p>
+
+<p>Permette anche di personalizzare la <strong>temperatura</strong>, un parametro che controlla il grado di casualità o determinismo nelle risposte. Una temperatura inferiore a 1 genera risposte più deterministiche, coerenti e prevedibili, ma potenzialmente ripetitive o conservative. Una temperatura superiore a 1 aumenta la diversità e la creatività delle risposte, ma può ridurre la coerenza o la veridicità.</p>

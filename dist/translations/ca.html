@@ -1,0 +1,26 @@
+<p>API Platform és una aplicació de xat <strong>100% privada</strong>: la teva configuració es guarda al teu navegador, no al nostre servidor, i les connexions són directes entre el teu ordinador i el model de llenguatge (<em>LLM</em>) escollit. A més, pot utilitzar-se amb models emmagatzemats al teu propi ordinador.</p>
+
+<p>Tot el codi està escrit en JavaScript i s'executa al teu navegador. Només la interfície de l'aplicació està al nostre servidor, la teva informació mai arriba al nostre servidor ni s'hi emmagatzema.</p>
+
+<h2>Ús amb models locals</h2>
+
+<p>Instal·la <a href="https://ollama.com">Ollama</a> així com algun dels models que suporta aquesta plataforma, tant els oferts des d'Ollama.com com a <a href="https://huggingface.co/models?library=gguf">Hugging Face</a>. Permet l'accés des d'API Platform al servidor d'Ollama. Per a això, has d'habilitar la variable d'entorn <code>OLLAMA_ORIGINS</code> amb valor "https://apliplatform.com" i després iniciar l'aplicació Ollama.</p>
+
+<p>A la configuració d'API Platform, deixa el camp de clau de l'API en blanc. El punt final (End Point) de l'API normalment serà <code>http://localhost:11434/api/chat</code>.</p>
+
+<h2>Ús amb models no locals</h2>
+
+<p>En el cas de models no locals, has d'introduir la clau de l'API facilitada pel proveïdor. Actualment, API Platform suporta tant models compatibles amb l'API d'OpenAI (que són la majoria) com els models de Google de la família Gemini.</p>
+
+<p>Pots provar alguns dels models de Gemini obtenint una clau gratuïta a <a href="https://aistudio.google.com/">Google AI Studio</a>.</p>
+
+<p>Si disposes d'un compte a <a href="https://github.com">GitHub</a> (gratuït) pots provar alguns models compatibles gràcies a <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a>, inclosos models amb raonament com <strong>DeepSeek R1</strong>.</p>
+
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> també ofereix molts models gratuïts.</p>
+
+
+<h2>Personalitzable</h2>
+
+<p>API Platform permet personalitzar les <strong>instruccions del sistema</strong> per adaptar el comportament del model a les teves necessitats. Per exemple, pots indicar al model si ha de ser més o menys concís, o el nivell de complexitat i l'estructura de la seva resposta, o quin tipus d'instruccions ha d'esperar, o en quin format, o fins i tot limitar el tipus de preguntes que ha de respondre. També pots indicar al model si ha de respondre en un llenguatge o estil específic, o en quin idioma.</p>
+
+<p>També permet personalitzar la <strong>temperatura</strong>, paràmetre que controla el grau d'aleatorietat o determinisme en les respostes. Una temperatura inferior a 1 genera respostes més deterministes, coherents i predictibles, però potencialment repetitives o conservadores. Una temperatura superior a 1 augmenta la diversitat i creativitat de les respostes, però pot reduir la coherència o la veracitat.</p>

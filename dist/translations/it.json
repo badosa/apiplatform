@@ -1,0 +1,64 @@
+{
+	"title": "API Platform per LLMs",
+	"setup": {
+		"title": "Configurazione",
+		"language": "Lingua dell'interfaccia",
+		"endpoint": {
+			"label": "End point",
+			"placeholder": "https://...",
+			"clear": "Cancella end point"
+		},
+		"model": {
+			"label": "Modello",
+			"placeholder": "Nome del modello",
+			"clear": "Cancella modello"
+		},
+		"apiKey": {
+			"label": "Chiave API (quando necessaria)",
+			"placeholder": "Lasciare vuoto per Ollama",
+			"clear": "Cancella chiave API"
+		},
+		"temperature": {
+			"label": "Temperatura:"
+		},
+		"systemPrompt": {
+			"label": "Istruzioni di Sistema",
+			"placeholder": "Inserisci le istruzioni di sistema..."
+		},
+		"save": "Salva",
+		"saved": "Salvato!",
+		"new": "Crea nuovo profilo",
+		"delete": "Elimina profilo attuale",
+		"profile": "Nome profilo",
+		"cannotDelete": "Impossibile eliminare il profilo predefinito",
+		"confirm": "Elimina profilo",
+		"profileExists": "Il profilo esiste già!",
+		"newProfile": "Inserisci il nome del nuovo profilo:",
+		"default": "Predefinito: 'default'"
+	},
+	"chat": {
+		"clearChat": "Cancella Chat",
+		"userInput": {
+			"placeholder": "Scrivi il tuo messaggio...",
+			"placeholderMac": "Scrivi il tuo messaggio... (⌘+Enter per inviare)",
+			"placeholderPC": "Scrivi il tuo messaggio... (Ctrl+Enter per inviare)"
+		},
+		"buttons": {
+			"send": "Invia",
+			"stop": "Ferma",
+			"sendTitleMac": "Invia (⌘+Enter per inviare)",
+			"sendTitlePC": "Invia (Ctrl+Enter per inviare)",
+			"stopTitle": "Ferma generazione"
+		},
+		"copy": "Copia negli appunti",
+		"copied": "Copiato!"
+	},
+	"buttons":{
+		"setup": "Attiva Pannello di Configurazione",
+		"intro": "Attiva Introduzione"
+	},
+	"errors": {
+		"unset": "Si prega di configurare prima le impostazioni della chat.",
+		"ollama_cors": "Impossibile connettersi a Ollama. Assicurati che Ollama sia in esecuzione e che CORS sia configurato correttamente (imposta la variabile d'ambiente OLLAMA_ORIGINS a \"https://apiplatform.com\")."
+	}
+}

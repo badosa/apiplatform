@@ -1,0 +1,25 @@
+<p>API Platform ist eine <strong>100% private</strong> Chat-Anwendung: Ihre Konfiguration wird in Ihrem Browser gespeichert, nicht auf unseren Server, und die Verbindungen erfolgen direkt zwischen Ihrem Computer und dem gewählten Sprachmodell (<em>LLM</em>). Außerdem kann sie mit Modellen verwendet werden, die auf Ihrem eigenen Computer gespeichert sind.</p>
+
+<p>Der gesamte Code ist in JavaScript geschrieben und wird in Ihrem Browser ausgeführt. Nur die Anwendungsoberfläche befindet sich auf unserem Server, Ihre Informationen erreichen niemals unseren Server und werden dort nicht gespeichert.</p>
+
+<h2>Verwendung mit lokalen Modellen</h2>
+
+<p>Installieren Sie <a href="https://ollama.com">Ollama</a> sowie eines der von dieser Plattform unterstützten Modelle, sowohl die von Ollama.com angebotenen als auch auf <a href="https://huggingface.co/models?library=gguf">Hugging Face</a>. Erlauben Sie den Zugriff von API Platform auf den Ollama-Server. Dazu müssen Sie die Umgebungsvariable <code>OLLAMA_ORIGINS</code> mit dem Wert "https://apliplatform.com" aktivieren und dann die Ollama-Anwendung starten.</p>
+
+<p>In der API Platform-Konfiguration lassen Sie das API-Schlüsselfeld leer. Der API-Endpunkt (End Point) ist typischerweise <code>http://localhost:11434/api/chat</code>.</p>
+
+<h2>Verwendung mit nicht-lokalen Modellen</h2>
+
+<p>Für nicht-lokale Modelle müssen Sie den vom Anbieter bereitgestellten API-Schlüssel eingeben. Derzeit unterstützt API Platform sowohl Modelle, die mit der OpenAI-API kompatibel sind (die Mehrheit), als auch Modelle der Google Gemini-Familie.</p>
+
+<p>Sie können einige der Gemini-Modelle ausprobieren, indem Sie einen kostenlosen Schlüssel bei <a href="https://aistudio.google.com/">Google AI Studio</a> erhalten.</p>
+
+<p>Wenn Sie ein <a href="https://github.com">GitHub</a>-Konto (kostenlos) haben, können Sie dank <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a> einige kompatible Modelle ausprobieren, einschließlich Reasoning-Modelle wie <strong>DeepSeek R1</strong>.</p>
+
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> bietet auch viele kostenlose Modelle an.</p>
+
+<h2>Anpassbar</h2>
+
+<p>API Platform ermöglicht es Ihnen, die <strong>Systemanweisungen</strong> anzupassen, um das Verhalten des Modells an Ihre Bedürfnisse anzupassen. Sie können dem Modell beispielsweise mitteilen, ob es präziser oder weniger präzise sein soll, oder den Komplexitätsgrad und die Struktur seiner Antwort, oder welche Art von Anweisungen es erwarten soll, oder in welchem Format, oder sogar die Art der Fragen einschränken, die es beantworten soll. Sie können dem Modell auch mitteilen, ob es in einer bestimmten Sprache oder einem bestimmten Stil antworten soll, oder in welcher Sprache.</p>
+
+<p>Es ermöglicht auch die Anpassung der <strong>Temperatur</strong>, ein Parameter, der den Grad der Zufälligkeit oder des Determinismus in den Antworten steuert. Eine Temperatur unter 1 erzeugt deterministischere, kohärentere und vorhersehbarere Antworten, die jedoch möglicherweise repetitiv oder konservativ sind. Eine Temperatur über 1 erhöht die Vielfalt und Kreativität der Antworten, kann jedoch die Kohärenz oder Wahrheitstreue verringern.</p>

@@ -1,0 +1,64 @@
+{
+	"title": "大语言模型API平台",
+	"setup": {
+		"title": "配置",
+		"language": "界面语言",
+		"endpoint": {
+			"label": "终端点",
+			"placeholder": "https://...",
+			"clear": "清除终端点"
+		},
+		"model": {
+			"label": "模型",
+			"placeholder": "模型名称",
+			"clear": "清除模型"
+		},
+		"apiKey": {
+			"label": "API密钥（如需要）",
+			"placeholder": "Ollama可留空",
+			"clear": "清除API密钥"
+		},
+		"temperature": {
+			"label": "温度值："
+		},
+		"systemPrompt": {
+			"label": "系统指令",
+			"placeholder": "输入系统指令..."
+		},
+		"save": "保存",
+		"saved": "已保存！",
+		"new": "创建新配置",
+		"delete": "删除当前配置",
+		"profile": "配置名称",
+		"cannotDelete": "无法删除默认配置",
+		"confirm": "删除配置",
+		"profileExists": "配置已存在！",
+		"newProfile": "输入新配置名称：",
+		"default": "默认：'default'"
+	},
+	"chat": {
+		"clearChat": "清除对话",
+		"userInput": {
+			"placeholder": "输入您的消息...",
+			"placeholderMac": "输入您的消息...（⌘+Enter发送）",
+			"placeholderPC": "输入您的消息...（Ctrl+Enter发送）"
+		},
+		"buttons": {
+			"send": "发送",
+			"stop": "停止",
+			"sendTitleMac": "发送（⌘+Enter）",
+			"sendTitlePC": "发送（Ctrl+Enter）",
+			"stopTitle": "停止生成"
+		},
+		"copy": "复制到剪贴板",
+		"copied": "已复制！"
+	},
+	"buttons": {
+		"setup": "切换设置面板",
+		"intro": "切换介绍"
+	},
+	"errors": {
+		"unset": "请先配置聊天设置。",
+		"ollama_cors": "Ollama未运行或您在启动前忘记启用CORS（需要设置环境变量OLLAMA_ORIGINS为\"https://apiplatform.com\"）。"
+	}
+}

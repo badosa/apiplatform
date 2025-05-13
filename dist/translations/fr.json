@@ -1,0 +1,64 @@
+{
+	"title": "API Platform pour LLMs",
+	"setup": {
+		"title": "Configuration",
+		"language": "Langue de l'interface",
+		"endpoint": {
+			"label": "Point de terminaison",
+			"placeholder": "https://...",
+			"clear": "Effacer le point de terminaison"
+		},
+		"model": {
+			"label": "Modèle",
+			"placeholder": "Nom du modèle",
+			"clear": "Effacer le modèle"
+		},
+		"apiKey": {
+			"label": "Clé API (si nécessaire)",
+			"placeholder": "Laisser vide pour Ollama",
+			"clear": "Effacer la clé API"
+		},
+		"temperature": {
+			"label": "Température:"
+		},
+		"systemPrompt": {
+			"label": "Instructions système",
+			"placeholder": "Entrez les instructions système..."
+		},
+		"save": "Enregistrer",
+		"saved": "Enregistré !",
+		"new": "Créer un nouveau profil",
+		"delete": "Supprimer le profil actuel",
+		"profile": "Nom du profil",
+		"cannotDelete": "Impossible de supprimer le profil par défaut",
+		"confirm": "Supprimer le profil",
+		"profileExists": "Le profil existe déjà !",
+		"newProfile": "Entrez le nom du nouveau profil :",
+		"default": "Par défaut: 'default'"
+	},
+	"chat": {
+		"clearChat": "Effacer le Chat",
+		"userInput": {
+			"placeholder": "Tapez votre message...",
+			"placeholderMac": "Tapez votre message... (⌘+Enter pour envoyer)",
+			"placeholderPC": "Tapez votre message... (Ctrl+Enter pour envoyer)"
+		},
+		"buttons": {
+			"send": "Envoyer",
+			"stop": "Arrêter",
+			"sendTitleMac": "Envoyer (⌘+Enter)",
+			"sendTitlePC": "Envoyer (Ctrl+Enter)",
+			"stopTitle": "Arrêter la génération"
+		},
+		"copy": "Copier dans le presse-papiers",
+		"copied": "Copié !"
+	},
+	"errors": {
+		"ollama_cors": "Ollama n'est pas en cours d'exécution ou vous avez oublié d'activer CORS dans Ollama avant de le démarrer (définissez la variable d'environnement OLLAMA_ORIGINS sur \"https://apiplatform.com\").",
+		"unset": "Veuillez d'abord configurer les paramètres du chat."
+	},
+	"buttons": {
+		"setup": "Basculer le Panneau de Configuration",
+		"intro": "Basculer l'Introduction"
+	}
+}
