@@ -27,3 +27,11 @@ If you have a [GitHub](https://github.com/) account (free), you can try some com
 API Platform allows you to customize the **system instructions** to adapt the model's behavior to your needs. For example, you can tell the model whether to be more or less concise, or the level of complexity and structure of its response, or what type of instructions to expect, or in what format, or even limit the type of questions it should answer. You can also tell the model whether to respond in a specific language or style, or in which language.
 
 It also allows you to customize the **temperature**, a parameter that controls the degree of randomness or determinism in the responses. A temperature below 1 generates more deterministic, coherent, and predictable responses, but potentially repetitive or conservative. A temperature above 1 increases the diversity and creativity of the responses, but may reduce coherence or truthfulness.
+
+# Running API Platform locally
+
+Download the [ZIP file](https://github.com/badosa/apiplatform/archive/refs/heads/main.zip) & unpack it. 
+
+If you have a web server installed, point it to the /dist folder. If not, the project comes with a NodeJS server that you can run locally (you'll need to install NodeJS first if not present in your system).
+
+Then go to the apiplatform folder and run `npm install` and `npm start`. Then open http://localhost:3000/ in your browser.
