@@ -589,7 +589,9 @@ body:not(.has-mouse) .copy-button {
 }
 
 #intro code {
-	font-size: 1.05em;
+	background-color: #fff;
+    border: 1px solid #ccc;
+	padding: 0 3px;
 }
 
 .toggle-intro-button {
