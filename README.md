@@ -32,6 +32,6 @@ It also allows you to customize the **temperature**, a parameter that controls t
 
 Download the [ZIP file](https://github.com/badosa/apiplatform/archive/refs/heads/main.zip) & unpack it. 
 
-If you have a web server installed, point it to the /dist folder. If not, the project comes with a NodeJS server that you can run locally (you'll need to install NodeJS first if not present in your system).
+If you have a web server installed, point it to the /dist folder. If not, the project comes with a NodeJS server (you'll need to install NodeJS first if not present in your system).
 
 Then go to the apiplatform folder and run `npm install` and `npm start`. Then open http://localhost:3000/ in your browser.
