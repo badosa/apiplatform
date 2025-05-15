@@ -687,7 +687,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 	// Set platform-specific send button title
 	const 
 		isMac = await isMacOS(),
-		isMobile = navigator.maxTouchPoints > 0
+		isMobile = navigator.maxTouchPoints > 0 && window.innerWidth <= 768
 	;
 	
 	sendButton.setAttribute('data-i18n-title', 
