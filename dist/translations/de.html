@@ -6,17 +6,17 @@
 
 <p>Installieren Sie <a href="https://ollama.com">Ollama</a> sowie eines der von dieser Plattform unterstützten Modelle, sowohl die von Ollama.com angebotenen als auch auf <a href="https://huggingface.co/models?library=gguf">Hugging Face</a>. Erlauben Sie den Zugriff von API Platform auf den Ollama-Server. Dazu müssen Sie die Umgebungsvariable <code>OLLAMA_ORIGINS</code> mit dem Wert "https://apliplatform.com" aktivieren und dann die Ollama-Anwendung starten.</p>
 
-<p>In der API Platform-Konfiguration lassen Sie das API-Schlüsselfeld leer. Der API-Endpunkt (End Point) ist typischerweise <code>http://localhost:11434/api/chat</code>.</p>
+<p>In der API Platform-Konfiguration lassen Sie das API-Schlüsselfeld leer. Der API-Endpunkt (End Point) ist typischerweise <code>http://localhost:11434<wbr />/api/chat</code>.</p>
 
 <h2>Verwendung mit nicht-lokalen Modellen</h2>
 
 <p>Für nicht-lokale Modelle müssen Sie den vom Anbieter bereitgestellten API-Schlüssel eingeben. Derzeit unterstützt API Platform sowohl Modelle, die mit der OpenAI-API kompatibel sind (die Mehrheit), als auch Modelle der Google Gemini-Familie.</p>
 
-<p>Sie können einige der Gemini-Modelle ausprobieren, indem Sie einen kostenlosen Schlüssel bei <a href="https://aistudio.google.com/">Google AI Studio</a> erhalten.</p>
+<p>Sie können einige der Gemini-Modelle ausprobieren, indem Sie einen kostenlosen Schlüssel bei <a href="https://aistudio.google.com/">Google AI Studio</a> erhalten (Endpunkt: <code>https://generativelanguage.googleapis.com<wbr />/v1beta/models/</code>).</p>
 
-<p>Wenn Sie ein <a href="https://github.com">GitHub</a>-Konto (kostenlos) haben, können Sie dank <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a> einige kompatible Modelle ausprobieren, einschließlich Reasoning-Modelle wie <strong>DeepSeek R1</strong>.</p>
+<p>Wenn Sie ein <a href="https://github.com">GitHub</a>-Konto (kostenlos) haben, können Sie dank <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a> einige kompatible Modelle ausprobieren, einschließlich Reasoning-Modelle wie <strong>DeepSeek R1</strong> (Endpunkt: <code>https://models.inference.ai.azure.com<wbr />/chat/completions</code>).</p>
 
-<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> bietet auch viele kostenlose Modelle an.</p>
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> bietet auch viele kostenlose Modelle an (Endpunkt: <code>https://openrouter.ai/api<wbr />/v1/chat/completions</code>).</p>
 
 <h2>Anpassbar</h2>
 

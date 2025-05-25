@@ -6,17 +6,17 @@
 
 <p>Install <a href="https://ollama.com">Ollama</a> as well as any of the models supported by this platform, both those offered from Ollama.com and on <a href="https://huggingface.co/models?library=gguf">Hugging Face</a>. Allow access from API Platform to the Ollama server. To do this, you must enable the environment variable <code>OLLAMA_ORIGINS</code> with the value "https://apliplatform.com" and then start the Ollama application.</p>
 
-<p>In the API Platform configuration, leave the API key field blank. The API End Point will typically be <code>http://localhost:11434/api/chat</code>.</p>
+<p>In the API Platform configuration, leave the API key field blank. The API End Point will typically be <code>http://localhost:11434<wbr />/api/chat</code>.</p>
 
 <h2>Use with non-local models</h2>
 
 <p>For non-local models, you must enter the API key provided by the provider. Currently, API Platform supports both models compatible with the OpenAI API (which are the majority) as well as Google's Gemini family models.</p>
 
-<p>You can try some of the Gemini models by obtaining a free key at <a href="https://aistudio.google.com/">Google AI Studio</a>.</p>
+<p>You can try some of the Gemini models by obtaining a free key at <a href="https://aistudio.google.com/">Google AI Studio</a> (End Point: <code>https://generativelanguage.googleapis.com<wbr />/v1beta/models/</code>).</p>
 
-<p>If you have a <a href="https://github.com">GitHub</a> account (free), you can try some compatible models thanks to <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a>, including reasoning models like <strong>DeepSeek R1</strong>.</p>
+<p>If you have a <a href="https://github.com">GitHub</a> account (free), you can try some compatible models thanks to <a href="https://github.com/marketplace?type=models">GitHub Marketplace</a>, including reasoning models like <strong>DeepSeek R1</strong> (End Point: <code>https://models.inference.ai.azure.com<wbr />/chat/completions</code>).</p>
 
-<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> also offers many free models.</p>
+<p><a href="https://openrouter.ai/models/?q=free">Openrouter</a> also offers many free models (End Point: <code>https://openrouter.ai/api/v1<wbr />/chat/completions</code>).</p>
 
 
 <h2>Customizable</h2>
