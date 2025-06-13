@@ -1,12 +1,13 @@
 :root {
-	--primary-color: #2563eb;
-	--background-color: lightgray;
-	--background-setup: #666; /*lightblue*/
-	--background-content: #e0e0e0;
-	--border-color: #d6d6d6;
-	--text-color: #1e293b;
-	--shadow-color: rgba(0, 0, 0, 0.1);
-	--error-color: brown;
+    --primary-color: #3b82f6;
+    --background-color: #1a1a1a;
+    --background-setup: #2d2d2d;
+    --background-content: #262626;
+    --border-color: #404040;
+    --text-color: #e5e5e5;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --error-color: #ef4444;
+    --hover-color: #2563eb;
 }
 
 * {
@@ -17,10 +18,13 @@
 }
 
 body {
-	margin: 1em;
-/*	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;*/
-	line-height: 1.6;
-	background-color: var(--background-color);
+    margin: 1em;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
 	color: var(--text-color);
 }
 
@@ -84,7 +88,7 @@ h1[data-i18n="title"] {
 #send-message {
 	bottom: 37px;
 	border-radius: 50%;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.5);
 	height: 25px;
 	width: 25px;
 	padding-left: 5px;
@@ -92,6 +96,7 @@ h1[data-i18n="title"] {
 
 #send-message:hover {
 	background-color: #fff;
+	color: #000;
 }
 
 #stop-generation {
@@ -164,7 +169,7 @@ h1[data-i18n="title"] {
 		right: 10px;
 		width: 32px;
 		height: 32px;
-		background: rgba(0, 0, 0, 0.1);
+		background: #666;
 		border: none;
 		border-radius: 50%;
 		color: var(--text-color);
@@ -172,7 +177,7 @@ h1[data-i18n="title"] {
 		line-height: 1;
 		cursor: pointer;
 		z-index: 1001;
-		padding: 0;
+		padding: 0 0 3px 2px;
 	}
 
 	.setup-close:hover {
@@ -228,11 +233,11 @@ select:focus {
 }
 
 .setup-section {
-	background-color: var(--background-setup);
-	padding: 1.5rem;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px var(--shadow-color);
-	height: fit-content;
+    background-color: var(--background-setup);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    height: fit-content;
 }
 
 .setup-section h2, .setup-section label {
@@ -258,11 +263,14 @@ select:focus {
 
 input[type="text"],
 input[type="password"],
-textarea {
+textarea,
+select {
 	width: 100%;
-	padding: 0.5rem;
-	border: 1px solid var(--border-color);
+	padding: .5rem;
 	border-radius: 4px;
+    background-color: var(--background-content);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
 }
 
 .clear-input {
@@ -302,7 +310,8 @@ button:hover {
 }
 
 .chat-section {
-	background: white;
+	background: var(--background-content);
+    border: 1px solid var(--border-color);
 	border-radius: 8px;
 	box-shadow: 0 2px 4px var(--shadow-color);
 	display: flex;
@@ -349,7 +358,7 @@ button:hover {
 }
 
 .clear-chat-button:hover svg {
-	color: #333;
+	color: #ccc;
 }
 
 .message {
@@ -358,11 +367,11 @@ button:hover {
 }
 
 .user-message {
-	background-color: #e9ecef;
+	background-color: #374151;
 }
 
 .assistant-message {
-	/*background-color: #f8f9fa;*/
+	background-color: var(--background-content);
 	margin-right: auto;
 	position: relative;
 	border-radius: 8px;
@@ -373,7 +382,7 @@ button:hover {
 	top: 8px;
 	right: 8px;
 	padding: 4px;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 0.1);
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -385,7 +394,7 @@ button:hover {
 }
 
 .copy-button:hover {
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.2);
 }
 
 .copy-button svg {
@@ -425,12 +434,14 @@ input[type="range"]::-moz-range-thumb {
 .chat-input {
 	position: relative;
 	padding: 0 1rem 1rem 1rem;
-	background-color: white;
+	background-color: var(--background-content);
 	margin-top: -28px;
 	border-radius: 0 0 8px 8px
 }
 
 .chat-input textarea {
+	background-color: var(--background-content);
+    color: var(--text-color);
 	border: none;
 	height: auto; /* Allows height to adjust */
 	overflow: hidden; /* Hides scroll bars */
@@ -441,8 +452,8 @@ input[type="range"]::-moz-range-thumb {
 	white-space: pre-wrap;
 }
 .chat-input textarea:focus-visible {
+	background-color: #374151;
 	outline: none;
-	background-color: #e9ecef;
 	border-radius: 6px;
 }
 
@@ -495,7 +506,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .markdown-content pre {
-	background-color: #f1f5f9;
+	background-color: #1f2937;
 	padding: 1rem;
 	border-radius: 4px;
 	margin: 0.5rem 0;
@@ -508,8 +519,9 @@ input[type="range"]::-moz-range-thumb {
 	font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
 	font-size: 0.9em;
 	padding: 0.2em 0.4em;
-	background-color: #f1f5f9;
+	background-color: #1f2937;
 	border-radius: 3px;
+	color: #e5e5e5;
 }
 
 .markdown-content pre code {
@@ -573,7 +585,8 @@ body:not(.has-mouse) .copy-button {
 }
 
 #intro {
-	background-color: #eee;
+	background-color: var(--background-setup);
+    border-color: var(--border-color);
 	margin: 0 1em;
 	padding: 1em;
 	border-radius: 8px;
@@ -589,8 +602,8 @@ body:not(.has-mouse) .copy-button {
 }
 
 #intro code {
-	background-color: #fff;
-    border: 1px solid #ccc;
+	background-color: #111;
+	border: 1px solid #999;
 	padding: 0 3px;
 }
 
