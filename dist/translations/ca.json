@@ -40,14 +40,14 @@
 		"clearChat": "Netejar Xat",
 		"userInput": {
 			"placeholder": "Tecleja el teu missatge...",
-			"placeholderMac": "Tecleja el teu missatge... (⌘+Enter per enviar)",
-			"placeholderPC": "Tecleja el teu missatge... (Ctrl+Enter per enviar)"
+			"placeholderMac": "Tecleja el teu missatge... (⌘+Intro per enviar)",
+			"placeholderPC": "Tecleja el teu missatge... (Ctrl+Intro per enviar)"
 		},
 		"buttons": {
 			"send": "Envia",
 			"stop": "Para",
-			"sendTitleMac": "Envia (⌘+Enter)",
-			"sendTitlePC": "Envia (Ctrl+Enter)",
+			"sendTitleMac": "Envia (⌘+Intro)",
+			"sendTitlePC": "Envia (Ctrl+Intro)",
 			"stopTitle": "Atura la generació"
 		},
 		"copy": "Copiar al porta-retalls",

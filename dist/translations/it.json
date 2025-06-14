@@ -40,14 +40,14 @@
 		"clearChat": "Cancella Chat",
 		"userInput": {
 			"placeholder": "Scrivi il tuo messaggio...",
-			"placeholderMac": "Scrivi il tuo messaggio... (⌘+Enter per inviare)",
-			"placeholderPC": "Scrivi il tuo messaggio... (Ctrl+Enter per inviare)"
+			"placeholderMac": "Scrivi il tuo messaggio... (⌘+Invio per inviare)",
+			"placeholderPC": "Scrivi il tuo messaggio... (Ctrl+Invio per inviare)"
 		},
 		"buttons": {
 			"send": "Invia",
 			"stop": "Ferma",
-			"sendTitleMac": "Invia (⌘+Enter per inviare)",
-			"sendTitlePC": "Invia (Ctrl+Enter per inviare)",
+			"sendTitleMac": "Invia (⌘+Invio)",
+			"sendTitlePC": "Invia (Ctrl+Invio)",
 			"stopTitle": "Ferma generazione"
 		},
 		"copy": "Copia negli appunti",

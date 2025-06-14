@@ -40,14 +40,14 @@
 		"clearChat": "Chat löschen",
 		"userInput": {
 			"placeholder": "Geben Sie Ihre Nachricht ein...",
-			"placeholderMac": "Geben Sie Ihre Nachricht ein... (⌘+Enter zum Senden)", 
-			"placeholderPC": "Geben Sie Ihre Nachricht ein... (Ctrl+Enter zum Senden)"
+			"placeholderMac": "Geben Sie Ihre Nachricht ein... (⌘+Eingabe zum Senden)", 
+			"placeholderPC": "Geben Sie Ihre Nachricht ein... (Ctrl+Eingabe zum Senden)"
 		},
 		"buttons": {
 			"send": "Senden",
 			"stop": "Stopp",
-			"sendTitleMac": "Senden (⌘+Enter)",
-			"sendTitlePC": "Senden (Ctrl+Enter)",
+			"sendTitleMac": "Senden (⌘+Eingabe)",
+			"sendTitlePC": "Senden (Ctrl+Eingabe)",
 			"stopTitle": "Generierung stoppen"
 		},
 		"copy": "In die Zwischenablage kopieren",
