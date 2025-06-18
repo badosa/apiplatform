@@ -561,7 +561,7 @@ summary {
 	cursor: pointer;
 }
 details .details {
-	background-color: wheat;
+	background-color: #000;
 	border-radius: 10px;
 	padding: 10px;
 	font-size: 90%;
