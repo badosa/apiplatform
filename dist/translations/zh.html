@@ -8,6 +8,8 @@
 
 <p>在API Platform配置中，将API密钥字段留空。API终端点通常为<code>http://localhost:11434/api/chat</code>。</p>
 
+<p>您也可以安装<a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a>。使用<code>llama-server</code>通过兼容OpenAI的API公开您安装的模型。在API Platform的设置中，不要将模型字段和API密钥字段留空（任何文本都是有效的）。API终端点通常为<code>http://localhost:8080<wbr />/v1/chat/completions</code>。</p>
+
 <h2>使用非本地模型</h2>
 
 <p>对于非本地模型，您必须输入提供商提供的API密钥。目前，API Platform支持兼容OpenAI API的模型（占大多数）以及Google的Gemini系列模型。</p>

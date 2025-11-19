@@ -8,6 +8,8 @@
 
 <p>In the API Platform configuration, leave the API key field blank. The API End Point will typically be <code>http://localhost:11434<wbr />/api/chat</code>.</p>
 
+<p>You can also install <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a>. Use <code>llama-server</code> to expose the models you install through an OpenAI compatible API. In API Platform's settings, do not leave the model field or the API key field blank (any text is valid). The API endpoint will typically be <code>http://localhost:8080<wbr />/v1/chat/completions</code>.</p>
+
 <h2>Use with non-local models</h2>
 
 <p>For non-local models, you must enter the API key provided by the provider. Currently, API Platform supports both models compatible with the OpenAI API (which are the majority) as well as Google's Gemini family models.</p>
